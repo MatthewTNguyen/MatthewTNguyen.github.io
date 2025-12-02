@@ -1,24 +1,80 @@
-body {
-    background-color:hsl(60, 56%, 91%);(255, 255, 255);
+/* Page background + font */
+body { 
+    background-color: hsl(60, 56%, 91%);
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Header */
 h1 {
-    color:darkolivegreen;
-    text-align:center;
+    color: darkolivegreen;
+    text-align: center;
+    margin-top: 20px;
 }
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+
+/* Section headers */
+h2 {
+    color: darkolivegreen;
+    margin-left: 20px;
+}
+
+/* About section */
+.about {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid darkolivegreen;
+}
+
+/* Skills */
+.skills ul {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Projects container */
+.projects { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Each project card */
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: hsl(60, 56%, 91%); /* pick a color */
-border-radius: 25%;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid darkolivegreen;
+    text-align: center;
 }
-.project img{
-width: 300px;
-height: 300px;
-margin: 10px;
-border: 3px solid darkolivegreen(126, 14, 201); /* choose a color */
-display: block;
-margin: auto;
+
+/* Project images */
+.project img {
+    width: 100%;
+    height: auto;
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
 }
+
+/* Contact */
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact a {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
