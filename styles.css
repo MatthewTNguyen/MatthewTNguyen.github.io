@@ -29,19 +29,7 @@ h2 {
     width: 300px;
     border-radius: 15px;
     border: 3px solid darkolivegreen;
-}
-
-/* --- Skills Section --- */
-.skills {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
-}
+} .skills { max-width: 900px; margin: 0 auto; text-align: center; } .skills ul { list-style: none; padding: 0; margin-top: 10px; font-size: 18px; text-align: center; }
 
 /* --- PROJECTS LAYOUT (THIS IS THE IMPORTANT PART) --- */
 .projects,
