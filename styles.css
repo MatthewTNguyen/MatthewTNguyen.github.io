@@ -1,80 +1,92 @@
-/* Page background + font */
-body { 
+/* --- Global --- */
+body {
     background-color: hsl(60, 56%, 91%);
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
+/* --- Headings --- */
 h1 {
-    color: darkolivegreen;
     text-align: center;
+    color: darkolivegreen;
     margin-top: 20px;
 }
 
-/* Section headers */
 h2 {
     color: darkolivegreen;
-    margin-left: 20px;
+    margin: 20px;
 }
 
-/* About section */
-.about {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+/* --- About Section --- */
+#about {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
 }
 
-.about img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
+#about img {
+    width: 300px;
+    border-radius: 15px;
     border: 3px solid darkolivegreen;
 }
 
-/* Skills */
+/* --- Skills Section --- */
+.skills {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .skills ul {
-    margin-left: 20px;
+    list-style: none;
+    padding: 0;
     font-size: 18px;
 }
 
-/* Projects container */
-.projects { 
-    display: flex; 
-    flex-wrap: wrap; 
+/* --- PROJECTS LAYOUT (THIS IS THE IMPORTANT PART) --- */
+.projects,
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 /* Each project card */
 .project {
-    width: 300px;
-    margin: 15px;
-    padding: 15px;
     background: white;
-    border-radius: 15px;
     border: 2px solid darkolivegreen;
+    border-radius: 40px;   /* Rounded like the example */
+    width: 350px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+/* Project title */
+.project h3 {
+    color: darkolivegreen;
+    margin-bottom: 10px;
 }
 
 /* Project images */
 .project img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    border: 3px solid darkolivegreen;
     border-radius: 10px;
+    border: 3px solid darkolivegreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* Contact */
+/* --- Contact Section --- */
 .contact {
-    padding: 20px;
     text-align: center;
+    margin-top: 40px;
 }
 
 .contact a {
     color: darkolivegreen;
     font-weight: bold;
 }
-
